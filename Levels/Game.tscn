@@ -13,7 +13,9 @@ font_data = ExtResource( 2 )
 [node name="Game" type="Node2D"]
 script = ExtResource( 4 )
 
-[node name="Level1" parent="." instance=ExtResource( 3 )]
+[node name="World" type="Node" parent="."]
+
+[node name="Level1" parent="World" instance=ExtResource( 3 )]
 
 [node name="HUD" type="CanvasLayer" parent="." groups=["HUD"]]
 script = ExtResource( 1 )
